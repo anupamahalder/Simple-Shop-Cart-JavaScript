@@ -4,28 +4,33 @@
 }
 
 .cart-container{
-    width: 30%;
+    width: 500px;
     box-shadow: 4px 4px 8px grey;
-    margin: auto;
     text-align: center;
 }
 
-#product-container{
+.product-container{
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     gap: 15px;
-    width: 100%;
-    margin: auto;
+    width: 80%;
     text-align: center;
 }
 .product-card{
-    width: 250px;
+    width: 200px;
     height: 300px;
     box-shadow: 2px 3px 8px gray;
     padding: 20px;
+    border-radius: 8px;
 }
 .product-card>img{
     width: 100px;
     height: 100px;
+}
+.card-info{
+    display: flex;
+    gap: 5px;
+}
+.cart-main-container{
+    padding: 10px;
 }

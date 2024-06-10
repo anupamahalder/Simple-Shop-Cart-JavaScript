@@ -19,8 +19,21 @@ const displayProducts = (products) =>{
             <p>${product.description.slice(0, 70)}</p>
             <p><b>Price:</b> ${product.price} /-</p>
             <button>Details</button>
-            <button>Add to Cart</button>
+            <button onclick="handleAddToCart('${product.title?.slice(0,20)}', ${product.price})">Add to Cart</button>
         `;
         productContainer.appendChild(div);
     });
+}
+
+const handleAddToCart = (name, price) =>{
+    const container = document.getElementById("cart-main-container");
+    // create a div 
+    const div = document.createElement("div");
+    div.classList = "card-info";
+    div.innerHTML = `
+    <p>${name}, </p>
+    <p><b>Price:</b> Rs. ${price}</p>
+    `
+    container.appendChild(div);
+    console.log(name, price);
 }
