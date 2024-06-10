@@ -4,9 +4,10 @@
 }
 
 .cart-container{
-    width: 500px;
+    width: 400px;
     box-shadow: 4px 4px 8px grey;
     text-align: center;
+    margin-right: 20px;
 }
 
 .product-container{
@@ -17,15 +18,23 @@
     text-align: center;
 }
 .product-card{
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: 350px;
     box-shadow: 2px 3px 8px gray;
     padding: 20px;
     border-radius: 8px;
 }
-.product-card>img{
+.img-style{
     width: 100px;
     height: 100px;
+}
+.img-style2{
+    width: 200px;
+    height: 200px;
+}
+.modal-image{
+    display: flex;
+    justify-content: center;
 }
 .card-info{
     display: flex;
